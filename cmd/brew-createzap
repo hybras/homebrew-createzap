@@ -75,16 +75,13 @@ create_tmp() {
 }
 
 find_in_paths() {
-  for dir in "${TRASH_PATHS[@]}"; do
-    if [[ -d "$dir" ]]; then
-      cd "$dir"
-      for path in "$PWD"/*; do grep -iq "$1" <<< "$path" && echo "$path" >> $TMP_FILE; done
-    fi
-  done
+  local cask="$1"
+  fd --prune "$cask" "${TRASH_PATHS[@]}" 2> /dev/null | sort -u >> $TMP_FILE
 }
 
 find_in_home_folder() {
-  find ~ -maxdepth 1 | grep -i "$1" >> $TMP_FILE
+  local cask="$1"
+  fd --prune --max-depth 1 "$cask" ~ |sort >> $TMP_FILE
 }
 
 generate() {
