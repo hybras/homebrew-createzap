@@ -5,7 +5,7 @@ A `brew` [external command](https://github.com/Homebrew/brew/blob/master/docs/Ex
 ## Installation
 
 ```sh
-brew install hybras/tap/createzap
+brew install hybras/tap/homebrew-createzap
 ```
 
 ## Usage
