@@ -2,6 +2,8 @@
 
 A `brew` [external command](https://github.com/Homebrew/brew/blob/master/docs/External-Commands.md) that generates [zap stanza](https://docs.brew.sh/Cask-Cookbook#stanza-zap).
 
+Deprecated. Homebrew implemeted it as [generate-zap](https://github.com/Homebrew/brew/blob/master/Library/Homebrew/dev-cmd/generate-zap.rb)
+
 ## Installation
 
 ```sh
