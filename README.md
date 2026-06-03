@@ -7,7 +7,7 @@ Deprecated. Homebrew implemeted it as [generate-zap](https://github.com/Homebrew
 ## Installation
 
 ```sh
-brew tap nrlquaker/createzap
+brew install hybras/tap/homebrew-createzap
 ```
 
 ## Usage
